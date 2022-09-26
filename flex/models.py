@@ -10,8 +10,9 @@ class FlexPage(Page):
 
     content = StreamField(
         [
-            ("title_and_text", blocks.TitleAndTextBlock()),
-            ("Navigationsleiste", blocks.Navbar())
+            ("Navigationsleiste", blocks.Navbar()),
+            ("Header", blocks.Header()),
+            ("ImgAndText", blocks.ImgAndText())
         ],
         null=True,
         blank=True
