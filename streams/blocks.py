@@ -78,3 +78,12 @@ class BigImg(blocks.StructBlock):
         template = "streams/BigImg.html"
         icon = "edit"
         label = "Großes Bild"
+
+
+class Footer(blocks.StructBlock):
+    Text = title = blocks.TextBlock(required=True)
+
+    class Meta:
+        template = "streams/Footer.html"
+        icon = "edit"
+        label = "Footer"
